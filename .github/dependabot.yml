@@ -9,7 +9,7 @@ updates:
     directory: "/"
     target-branch: "master"
     schedule:
-      interval: "weekly"
+        - cron: "*/1 * * * *"
     versioning-strategy: "increase"
     pull-request-branch-name:
       separator: "-"
@@ -18,4 +18,7 @@ updates:
     commit-message:
       prefix: "update"
 
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
