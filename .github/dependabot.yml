@@ -18,8 +18,4 @@ updates:
     commit-message:
       prefix: "update"
 
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-
 
