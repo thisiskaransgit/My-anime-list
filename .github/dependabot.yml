@@ -7,7 +7,7 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    target-branch: "master"
+    target-branch: "main"
     schedule:
         - cron: "*/1 * * * *"
     versioning-strategy: "increase"
